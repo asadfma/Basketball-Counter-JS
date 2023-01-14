@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basketball Counter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <div>
+        <h1>Home</h1>
+        <div class="output-number">
+          <p id="home-result">0</p>
+        </div>
+        <div class="counter-numbers">
+          <span>
+            <button onclick="addone()">+1</button>
+          </span>
+          <span>
+            <button onclick="addtwo()">+2</button>
+          </span>
+          <span>
+            <button onclick="addthree()">+3</button>
+          </span>
+        </div>
+      </div>
+      <div>
+        <h1>Guest</h1>
+        <div class="output-number">
+          <p id="guest-result">0</p>
+        </div>
+        <div class="counter-numbers">
+          <span>
+            <button onclick="add1()">+1</button>
+          </span>
+          <span>
+            <button onclick="add2()">+2</button>
+          </span>
+          <span>
+            <button onclick="add3()">+3</button>
+          </span>
+        </div>
+      </div>
+      <button id="reset" onclick="reset()">New Game</button>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
